@@ -42,9 +42,7 @@ class AIIMainViewController: UIViewController, UITableViewDataSource, UITableVie
                 let dataList = response.value as! [[String : Any]]
                 self.dataArray = Mapper<AdvertisementModel>().mapArray(JSONArray: dataList)
                 
-                DispatchQueue.main.async {
-                    self.tableView.reloadData()
-                }
+                self.tableView.reloadData()
             }
         }
     }
@@ -61,7 +59,10 @@ class AIIMainViewController: UIViewController, UITableViewDataSource, UITableVie
     
     // MARK:- about tableview
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 5
+        guard let list = dataArray else {
+            return 0
+        }
+        return list.count
     }
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {

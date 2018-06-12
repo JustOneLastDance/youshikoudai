@@ -20,10 +20,6 @@
                 <rect key="frame" x="0.0" y="0.0" width="320" height="219.5"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="30219-50020ecf0a0d3978" translatesAutoresizingMaskIntoConstraints="NO" id="zkU-2h-z6a">
-                        <rect key="frame" x="10" y="10" width="300" height="104"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </imageView>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hjV-YJ-VHY">
                         <rect key="frame" x="0.0" y="209" width="320" height="10"/>
                         <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -67,6 +63,10 @@
                             <color key="titleColor" red="0.96862745100000003" green="0.96862745100000003" blue="0.96862745100000003" alpha="1" colorSpace="calibratedRGB"/>
                         </state>
                     </button>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="30219-50020ecf0a0d3978" translatesAutoresizingMaskIntoConstraints="NO" id="zkU-2h-z6a">
+                        <rect key="frame" x="10" y="10" width="300" height="104"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </imageView>
                 </subviews>
                 <constraints>
                     <constraint firstItem="iLX-1D-4oS" firstAttribute="top" secondItem="5B5-a7-AHd" secondAttribute="bottom" id="4yc-f4-gMt"/>
